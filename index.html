@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>ReportFlow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --blue: #6d5a9e;
+    --blue-dark: #4a3d73;
+    --beige: #f6f1e7;
+    --beige-dark: #ece3d1;
+    --text: #3c3733;
+    --muted: #7a746b;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--beige);
+    color: var(--text);
+    margin: 0;
+    padding: 40px 20px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; }
+  header { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: #fff; padding: 40px 32px; }
+  header img { width: 64px; height: 64px; border-radius: 14px; margin-bottom: 12px; }
+  header h1 { margin: 0; font-size: 26px; }
+  header p { margin: 8px 0 0 0; opacity: 0.9; font-size: 14px; }
+  main { padding: 32px; }
+  main p { font-size: 14px; line-height: 1.7; }
+  .links { margin-top: 20px; }
+  .links a {
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 10px 20px;
+    background: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13.5px;
+  }
+  .links a:hover { background: var(--blue-dark); }
+  footer { padding: 16px; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon128.png" alt="ReportFlow" />
+      <h1>ReportFlow</h1>
+      <p>Tasks in. Report out.</p>
+    </header>
+    <main>
+      <p>
+        ReportFlow turns your Trello, Asana, and ClickUp tasks into client-ready status reports
+        — right from a Chrome extension, with no server in between.
+      </p>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </main>
+    <footer>support.reportflow@gmail.com</footer>
+  </div>
+</body>
+</html>
