@@ -47,10 +47,10 @@
       <p>ReportFlow — a Chrome extension by ReportFlow</p>
     </header>
     <main>
-      <p class="updated">Last updated: August 2, 2026</p>
+      <p class="updated">Last updated: August 18, 2026</p>
 
       <p>
-        ReportFlow ("the extension") turns your Trello, Asana, and ClickUp tasks into client-ready
+        ReportFlow ("the extension") turns your Trello, Asana, ClickUp, and monday.com tasks into client-ready
         status reports. This page explains what data the extension touches, where it goes, and why —
         in plain language.
       </p>
@@ -65,7 +65,7 @@
       <table>
         <tr><th>Data</th><th>Why</th><th>Where it's stored</th></tr>
         <tr>
-          <td>Trello API key &amp; token, Asana personal access token, ClickUp personal API token</td>
+          <td>Trello API key &amp; token, Asana personal access token, ClickUp personal API token, monday.com personal API token</td>
           <td>To authenticate directly with each platform's own API and fetch your boards/projects/lists</td>
           <td><code>chrome.storage.local</code> on your device only</td>
         </tr>
@@ -83,7 +83,7 @@
 
       <h2>What ReportFlow does <em>not</em> do</h2>
       <ul>
-        <li>No ReportFlow backend server exists — the extension talks directly to Trello's, Asana's, and ClickUp's own APIs over HTTPS.</li>
+        <li>No ReportFlow backend server exists — the extension talks directly to Trello's, Asana's, ClickUp's, and monday.com's own APIs over HTTPS.</li>
         <li>No analytics, tracking pixels, or third-party advertising SDKs are included.</li>
         <li>No task data, tokens, or usage information is sold, shared, or transmitted to any third party by ReportFlow.</li>
         <li>Feedback is only sent when you actively fill out and click Send in the feedback form — nothing is collected automatically or silently.</li>
@@ -93,7 +93,7 @@
       <ul>
         <li><code>storage</code> — saves your connection tokens locally so you don't have to re-paste them every time you open the popup.</li>
         <li><code>clipboardWrite</code> — lets "Copy Report," "Copy Formatted Report," and the feedback form copy text for you to paste elsewhere.</li>
-        <li><code>host_permissions</code> for <code>api.trello.com</code>, <code>app.asana.com</code>, and <code>api.clickup.com</code> — lets the extension call those platforms' APIs directly using your token.</li>
+        <li><code>host_permissions</code> for <code>api.trello.com</code>, <code>app.asana.com</code>, <code>api.clickup.com</code>, and <code>api.monday.com</code> — lets the extension call those platforms' APIs directly using your token.</li>
       </ul>
 
       <h2>Your control over your data</h2>
